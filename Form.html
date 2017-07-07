@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <html lang = "en">
+  <title>AjaxProjectForm</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Form.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="Form.js"></script>
+</head>
+<body>
+ <!--  <form id="userForm">
+    <input type="text" id="UserInfo" name="userInfo">
+    <button type="submit" id="submitInformation">Enter Name</button> -->
+
+  <form>  
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="name" class="form-control" id="firstName">
+        </div>  
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="name" class="form-control" id="lastName">
+        </div>  
+        <div class="form-group">
+          <label for="birthdate">Date of Birth:</label>
+          <div class="bfh-datepicker" data-format="y-m-d" data-date="today">
+            <input type="date" class="form-control" id="date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+          <div class="form-group">
+            <label for="streetAddress">Street address:</label>
+            <input type="address" class="form-control" id="streetAdress">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="phone" class="form-control" id="phoneNumber">
+          </div>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="username" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Confirm Password:</label>
+            <input type="password" class="form-control" id="pwdConfirm">
+          </div>
+          <button type="submit" id="buttonClick">Submit</button>
+      </div>
+    </div>    
+  </form>
+  <div id="formStatus">
+  </div>
+</body>
+</html>
